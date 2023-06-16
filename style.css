@@ -1,0 +1,340 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* Main */
+.main{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('./image/charity2.jpg');
+    opacity: 0.95;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 35px,0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    border-radius: 25px;
+    background-color: #1d927b;
+    padding: 10px 20px;
+}
+
+/* Content */
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 90px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+}
+
+/* Button */
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #1d927b;
+    background: transparent;
+    color: rgb(246, 209, 115);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 00.5s;
+}
+button a{
+    text-decoration: none;
+    color: rgb(246, 209, 115);
+
+}
+
+button:hover{
+    background: #1d927b;
+}
+   
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+  display: none;
+}
+
+/* Services Section*/
+.h-primary{
+  text-align: center;
+  font-family: serif;
+  font-size: 2.5rem;
+  padding: 18px;
+}
+
+#services{
+  margin: 34px;
+  display: flex;
+  justify-content: center;
+} 
+
+#services .box,.box1,.box2{
+  border: 2px solid brown;
+  margin: -25px 10px;
+  padding: 38px;
+  border-radius: 23px;
+  background-color: rgb(237, 234, 234);
+  margin-bottom: 16px;
+}
+#services .box1 img{
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+#services .box img{
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+#services .box2 img{
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+#services .box,.box1,.box2 p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer{
+  text-align: center;
+  opacity: 0.7;
+  background: #1d927b;
+}
+
+.footer .share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:0;
+}
+
+.footer .share a{
+  font-size: 1.5rem;
+  color:#ccc;
+  padding: 0.6rem;
+  margin: 0 1.5rem;
+}
+
+.footer .share a:hover{
+  color:#eee;
+}
+
+.footer a:hover{
+  text-decoration: none;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content{
+  padding-top: 60px;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 20vh;
+    background: transparent;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    justify-content: space-between;
+  }
+  .navbar ul li{
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+  }
+        
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  #services{
+    flex-direction: column;
+  }
+  
+}
+
+@media (max-width: 360px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 20vh;
+    background: transparent;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    justify-content: space-between;
+  }
+  .navbar ul li{
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+  }
+        
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  #services{
+    flex-direction: column;
+  }
+  .h-secondary center{
+    font-size: 70%;
+  }
+  #services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+  }
+  #services .box1 img{
+    height: 100px;
+    margin: auto;
+    display: block;
+  }
+  #services .box2 img{
+    height: 100px;
+    margin: auto;
+    display: block;
+  }
+}
